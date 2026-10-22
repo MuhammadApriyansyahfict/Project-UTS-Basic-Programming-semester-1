@@ -1,1 +1,466 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Explore Indonesia</title>
 
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      background: #f0f7f6;
+      color: #333;
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+      line-height: 1.7;
+    }
+
+    header {
+      background: #285e55;
+      color: white;
+      text-align: center;
+      padding: 30px 20px;
+    }
+
+    header h1 {
+      margin: 8px 0;
+      font-size: 32px;
+    }
+
+    nav {
+      background: #1e463f;
+      text-align: center;
+      padding: 10px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      margin: 0 15px;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      max-width: 980px;
+      margin: auto;
+      padding: 26px 20px 35px;
+    }
+
+    section {
+      margin-bottom: 28px;
+      scroll-margin-top: 20px;
+    }
+
+    h2 {
+      color: #285e55;
+      font-size: 21px;
+      border-bottom: 2px solid #ffd166;
+      padding-bottom: 7px;
+    }
+
+    h3 {
+      font-size: 16px;
+    }
+
+    .pembuka {
+      background: #dceee9;
+      padding: 28px 24px;
+      text-align: center;
+      border-radius: 10px;
+    }
+
+    .pembuka h2 {
+      border: none;
+    }
+
+    .subjudul {
+      color: #396c60;
+      font-weight: bold;
+    }
+
+    .tombol {
+      display: inline-block;
+      padding: 9px 18px;
+      border-radius: 4px;
+      background: #285e55;
+      color: white;
+      text-decoration: none;
+    }
+
+    .tombol:hover {
+      background: #1e463f;
+    }
+
+    blockquote {
+      margin: 16px 0;
+      padding: 18px;
+      background: #fff5d1;
+      border-left: 4px solid #d6aa35;
+      font-style: italic;
+    }
+
+    blockquote p {
+      margin: 0;
+    }
+
+    cite {
+      display: block;
+    }
+
+    .galeri {
+      display: flex;
+      gap: 16px;
+    }
+
+    .kartu {
+      flex: 1;
+      min-width: 0;
+      background: white;
+      border: 1px solid #dce3e1;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    .kartu figure {
+      margin: 0;
+    }
+
+    .kartu img {
+      display: block;
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .isi-kartu {
+      padding: 14px;
+    }
+
+    .isi-kartu h3 {
+      color: #285e55;
+      margin: 9px 0 16px;
+    }
+
+    .isi-kartu a {
+      color: #285e55;
+      font-weight: bold;
+    }
+
+    .tabel-scroll {
+      overflow-x: auto;
+    }
+
+    table {
+      width: 100%;
+      min-width: 620px;
+      border-collapse: collapse;
+      background: white;
+    }
+
+    th, td {
+      border: 1px solid #cbd5d1;
+      padding: 10px;
+      text-align: left;
+    }
+
+    th {
+      background: #285e55;
+      color: white;
+    }
+
+    tbody tr:nth-child(even) {
+      background: #e7f1ed;
+    }
+
+    tfoot td {
+      text-align: center;
+      background: #fff5d1;
+      font-weight: bold;
+    }
+
+    footer {
+      background: #1e463f;
+      color: white;
+      text-align: center;
+      padding: 18px;
+    }
+
+    footer p {
+      margin: 0;
+    }
+
+    @media (max-width: 650px) {
+      .galeri {
+        flex-direction: column;
+      }
+
+      .kartu img {
+        height: 220px;
+      }
+
+      nav a {
+        margin: 0 7px;
+        font-size: 12px;
+      }
+
+      header h1 {
+        font-size: 28px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Header -->
+  <header id="beranda">
+    <h1>Explore Indonesia</h1>
+    <p>Discover the Beauty of Nusantara</p>
+  </header>
+
+  <!-- Menu navigasi -->
+  <nav aria-label="Menu utama">
+    <a href="#beranda">Beranda</a>
+    <a href="#tentang">Tentang</a>
+    <a href="#galeri">Galeri Wisata</a>
+    <a href="#informasi">Informasi</a>
+  </nav>
+
+  <main>
+    <!-- Bagian pembuka -->
+    <section class="pembuka">
+      <h2>Jelajahi Keindahan Indonesia</h2>
+
+      <p class="subjudul">
+        Keindahan Alam dan Budaya Indonesia
+      </p>
+
+      <p>
+        Indonesia merupakan negara kepulauan yang memiliki
+        <strong>keindahan alam</strong>, kekayaan budaya,
+        dan beragam destinasi wisata.
+      </p>
+
+      <p>
+        Dari pantai yang indah hingga pegunungan yang megah,
+        Indonesia menawarkan pengalaman wisata yang
+        <em>menarik dan berkesan</em>.
+      </p>
+
+      <p>
+        Mari mengenal lebih dekat keindahan
+        <mark>Nusantara</mark>!
+      </p>
+
+      <a class="tombol" href="#galeri">Jelajahi Destinasi</a>
+    </section>
+
+    <!-- Tentang pariwisata dan kutipan -->
+    <section id="tentang">
+      <h2>Tentang Pariwisata Indonesia</h2>
+
+      <p>
+        Pariwisata merupakan salah satu sektor yang dapat
+        mendukung perekonomian masyarakat. Destinasi wisata
+        juga memperkenalkan budaya dan kekayaan alam Indonesia
+        kepada pengunjung dari berbagai daerah dan negara.
+      </p>
+
+      <p>
+        Saat berwisata, kita perlu menerapkan prinsip
+        <strong>pariwisata berkelanjutan</strong>.
+        Pengunjung harus menjaga kebersihan dan menghormati
+        budaya masyarakat setempat.
+      </p>
+
+      <h3>Kutipan tentang Pariwisata</h3>
+
+      <blockquote>
+        <p>
+          Keindahan alam dan kekayaan budaya merupakan
+          aset berharga yang perlu dijaga bersama.
+        </p>
+        <cite>Pesan pelestarian wisata — tulisan penulis</cite>
+      </blockquote>
+
+      <p>
+        Ketika berkunjung ke tempat wisata, ingatlah pesan:
+        <q>Jaga alam agar tetap indah untuk generasi mendatang.</q>
+      </p>
+    </section>
+
+    <!-- Galeri destinasi wisata -->
+    <section id="galeri">
+      <h2>Galeri Destinasi Wisata</h2>
+
+      <div class="galeri">
+        <!-- Raja Ampat -->
+        <article class="kartu">
+          <figure>
+            <a
+              href="https://en.wikipedia.org/wiki/Raja_Ampat_Islands"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="images/raja-ampat.svg"
+                alt="Ilustrasi pulau-pulau hijau dan laut Raja Ampat"
+              >
+            </a>
+
+            <figcaption class="isi-kartu">
+              <h3>Raja Ampat</h3>
+              <p>
+                Raja Ampat terkenal dengan keindahan laut,
+                pulau-pulau kecil, dan kekayaan bawah laut.
+              </p>
+              <a
+                href="https://en.wikipedia.org/wiki/Raja_Ampat_Islands"
+                target="_blank"
+                rel="noopener noreferrer"
+              >Informasi Wisata</a>
+            </figcaption>
+          </figure>
+        </article>
+
+        <!-- Candi Borobudur -->
+        <article class="kartu">
+          <figure>
+            <a
+              href="https://whc.unesco.org/en/list/592/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="images/borobudur.svg"
+                alt="Ilustrasi stupa dan teras Candi Borobudur"
+              >
+            </a>
+
+            <figcaption class="isi-kartu">
+              <h3>Candi Borobudur</h3>
+              <p>
+                Borobudur merupakan destinasi wisata
+                bersejarah dengan arsitektur yang unik.
+              </p>
+              <a
+                href="https://whc.unesco.org/en/list/592/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >Informasi Wisata</a>
+            </figcaption>
+          </figure>
+        </article>
+
+        <!-- Danau Toba -->
+        <article class="kartu">
+          <figure>
+            <a
+              href="https://en.wikipedia.org/wiki/Lake_Toba"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="images/danau-toba.svg"
+                alt="Ilustrasi Danau Toba dan pulau di antara perbukitan"
+              >
+            </a>
+
+            <figcaption class="isi-kartu">
+              <h3>Danau Toba</h3>
+              <p>
+                Danau Toba menawarkan panorama danau
+                yang luas serta pemandangan perbukitan.
+              </p>
+              <a
+                href="https://en.wikipedia.org/wiki/Lake_Toba"
+                target="_blank"
+                rel="noopener noreferrer"
+              >Informasi Wisata</a>
+            </figcaption>
+          </figure>
+        </article>
+      </div>
+
+      <p>
+        Kunjungi
+        <a
+          href="https://www.indonesia.travel/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >situs resmi pariwisata Indonesia</a>
+        untuk informasi lebih lanjut.
+      </p>
+    </section>
+
+    <!-- Tabel informasi destinasi -->
+    <section id="informasi">
+      <h2 id="judul-tabel">
+        Informasi Destinasi Wisata Indonesia
+      </h2>
+
+      <div class="tabel-scroll">
+        <table aria-labelledby="judul-tabel">
+          <thead>
+            <tr>
+              <th scope="col">No.</th>
+              <th scope="col">Nama Destinasi</th>
+              <th scope="col">Lokasi</th>
+              <th scope="col">Jenis Wisata</th>
+              <th scope="col">Aktivitas Utama</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Raja Ampat</td>
+              <td>Papua Barat Daya</td>
+              <td>Bahari</td>
+              <td>Menyelam dan snorkeling</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Candi Borobudur</td>
+              <td>Magelang, Jawa Tengah</td>
+              <td>Sejarah dan budaya</td>
+              <td>Mengenal sejarah candi</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Danau Toba</td>
+              <td>Sumatera Utara</td>
+              <td>Alam</td>
+              <td>Menikmati panorama danau</td>
+            </tr>
+          </tbody>
+
+          <tfoot>
+            <tr>
+              <td colspan="5">
+                Jelajahi keindahan Indonesia dan jaga kelestarian alamnya!
+              </td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2026 Explore Indonesia</p>
+  </footer>
+</body>
+</html>
